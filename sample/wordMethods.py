@@ -1,18 +1,20 @@
-from word import Word
+from letter import Letter
 
 abc=["a","b","c","d","e","f","g","h","i","j","k","l","m","n","o","p","q","r","s","t","u","v","w","x","y","z"]
-words=[]
+letters=[]
 
 for chr in abc:
-    word=Word(chr,[0,0,0,0,0],0,True)
-    words.append(word)
+    letter=Letter(chr,[0,0,0,0,0],0,True)
+    letters.append(letter)
+
+
 
 # for i in words:
 #     Word.print(i)
 
-def printWords(words):
-  for word in words:
-    Word.print(word)
+def printWords(letters):
+  for word in letters:
+    Letter.print(word)
 
 german="docs/wordsFive.txt"
 
@@ -81,8 +83,11 @@ def dictionaryChars(words):
 
 
 
-prueba=['aalst','aalte','aappo','aarau']
-print( charMultipleArray('a','aaaalst'))
-print(arrayChar('aaaaaalst'))
-print(dictionaryChars(germanWords))
+
+# printWords(words)
+
+# prueba=['aalst','aalte','aappo','aarau']
+# print( charMultipleArray('a','aaaalst'))
+# print(arrayChar('aaaaaalst'))
+# print(dictionaryChars(germanWords))
 

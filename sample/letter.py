@@ -1,4 +1,4 @@
-class Word:
+class Letter:
     def __init__(self, chr,pos,count,more):
         self.chr = chr
         self.pos = pos
