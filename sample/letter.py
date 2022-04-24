@@ -14,7 +14,13 @@ class Letter:
             
 
     def print(self):
-        print("la letra: ",self.chr," aparece: ", self.count, " veces, en las posiciones: "
-        , self.pos)
+        if(self.more):
+            print("la letra: ",self.chr," aparece: ", self.count, " veces, en las posiciones: "
+        , self.pos, " puede haber más")
+        elif(not self.more and self.count ==0):
+            print("La letra: ",self.chr," no aparece ")
+        else:
+            print("la letra: ",self.chr," aparece: ", self.count, " veces, en las posiciones: "
+        , self.pos, " no hay más")
     
     
